@@ -43,8 +43,8 @@ Zombie1.nomnom(AHealthyClass, 'see')
 Zombie2.nomnom(AHealthyClass, 'walk')
 ```
 
-And then strange things started to happend. Zombie1 who took AHelthyClass eye, 
-start seeing things. And both of them been munching on AHelthyClass legs gain 
+And then strange things started to happend. Zombie1 who took AHealthyClass eye, 
+start seeing things. And both of them been munching on AHealthyClass legs gain 
 ability of walking again!
 ```python
 z1 = Zombie1()
@@ -59,7 +59,7 @@ z1.walk()
 >>> Walking around
 ```
 
-The miracle is that AHelthyClass can still see and walk and even run. 
+The miracle is that AHealthyClass can still see and walk and even run. 
 Maybe he was a spider in disguise.
 ```python
 h1 = AHealthyClass()
