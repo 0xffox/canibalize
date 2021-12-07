@@ -1,8 +1,8 @@
-# About
+## About
 This package enables code reuse in non-inheritance way from existing classes,
 effectively implementing traits-oriented programming pattern.
 
-# Story
+## Story
 Once upon a time there was 
 ```python 
 class AHealthyClass:
@@ -39,7 +39,7 @@ He walked closer and closer to the ambush and then zombies pounced at him. And
 started eating him.
 ```python
 
-Zombie1.nomnom(AHealthyClass, 'see')
+Zombie1.nomnom(AHealthyClass, ['see', 'walk'])
 Zombie2.nomnom(AHealthyClass, 'walk')
 ```
 
@@ -81,7 +81,7 @@ And married each other, probably...
 **The END**
 
 
-# Seriously, though
+## Seriously, though
 Lets imagine you have some Library and some Code that uses that Library.
 You have no controll of both of them, but you need to add/modify functionality 
 to them.
