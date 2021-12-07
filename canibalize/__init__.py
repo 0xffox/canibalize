@@ -11,15 +11,15 @@ def canibalize(predator: Type, pray: Type, attr_list=None):
     elif not isinstance(attr_list, list):
         attr_list = [attr_list, ]
 
+    # history
+    if not hasattr(predator, '__canibalized__'):
+        setattr(predator, '__canibalized__', defaultdict(lambda: set()))
+
     # Nomnomnoming
     for attr_name in attr_list:
         if hasattr(pray, attr_name):
             setattr(predator, attr_name, getattr(pray, attr_name))
-
-    # history
-    if not hasattr(predator, '__canibalized__'):
-        setattr(predator, '__canibalized__', defaultdict(lambda: list()))
-    predator.__canibalized__[pray].extend(attr_list)
+            predator.__canibalized__[pray].add(attr_name)
 
 
 def infect(what:Type):
