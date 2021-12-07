@@ -39,8 +39,8 @@ He walked closer and closer to the ambush and then zombies pounced at him. And
 started eating him.
 ```python
 
-Zombie1.nomnom(AHealthyClass, ['see', 'walk'])
-Zombie2.nomnom(AHealthyClass, 'walk')
+Zombie1.nomnom(AHealthyClass, 'see')
+Zombie2.nomnom(AHealthyClass, ['see', 'walk'])
 ```
 
 And then strange things started to happend. Zombie1 who took AHealthyClass eye, 
